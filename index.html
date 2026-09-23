@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Empowered Managers, Higher Performing Teams</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<section class="section">
+  <div class="glow" aria-hidden="true"></div>
+
+  <header class="hero">
+    <p class="eyebrow">Improve manager productivity</p>
+    <h1 class="headline">Empowered managers,<br>higher performing teams</h1>
+    <p class="subhead">Make managers your highest point of leverage with productive meetings, clear expectations, and accountability.</p>
+  </header>
+
+  <div class="bento" id="bento">
+
+    <!-- Goals card -->
+    <article class="card card--goals" data-reveal>
+      <div class="goals-panel">
+        <div class="goals-panel__title">Goals</div>
+        <ul class="goal-tree" id="goalTree">
+          <li class="goal-root">
+            <span class="goal-icon">🎯</span>
+            <span class="goal-text">Increase International Revenue</span>
+            <span class="avatar avatar--rin">TR</span>
+          </li>
+          <li class="goal-child">
+            <span class="goal-icon goal-icon--sm">📈</span>
+            <span class="goal-text">Increase sales in DKJ by 12%</span>
+            <span class="avatar avatar--purple">AO</span>
+          </li>
+          <li class="goal-child">
+            <span class="goal-icon goal-icon--sm">📈</span>
+            <span class="goal-text">Complete EMEA sales training</span>
+            <span class="avatar avatar--blue">CWKJ</span>
+          </li>
+          <li class="goal-child">
+            <span class="goal-icon goal-icon--sm">📈</span>
+            <span class="goal-text">Complete pricing strategy revamp</span>
+            <span class="avatar avatar--yellow">MN</span>
+          </li>
+          <li class="goal-child">
+            <span class="goal-icon goal-icon--sm">📈</span>
+            <span class="goal-text">Complete pricing strategy revamp</span>
+            <span class="avatar avatar--indigo">SP</span>
+          </li>
+        </ul>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">OKRs &amp; goals</h3>
+        <p class="card__text">Focus individuals and teams on your company's top priorities, tracking progress and risk at every step.</p>
+      </div>
+    </article>
+
+    <!-- Analytics card -->
+    <article class="card card--analytics" data-reveal>
+      <h3 class="card__title">Analytics</h3>
+      <p class="card__text">Seamlessly connect performance review cycle results into compensation decisions, creating fair and equitable pay outcomes.</p>
+    </article>
+
+    <!-- Results card -->
+    <article class="card card--results" data-reveal>
+      <div class="results-panel">
+        <div class="results-panel__tabs">
+          <span class="tab tab--active">Performance</span>
+          <span class="tab">Compensation</span>
+        </div>
+        <p class="results-panel__group">Group by: Department <span class="chev">⌄</span></p>
+        <div class="bars" id="resultsChart" role="img" aria-label="Bar chart of performance results by department"></div>
+      </div>
+    </article>
+
+    <!-- Grow card -->
+    <article class="card card--grow" data-reveal>
+      <h3 class="card__title">Grow</h3>
+      <p class="card__text">Increase growth and engagement with dynamic employee development tools built for every stage of the career journey.</p>
+      <div class="grow-panel">
+        <div class="grow-panel__person">
+          <span class="avatar avatar--photo" aria-hidden="true"></span>
+          <div>
+            <p class="grow-panel__name">Bethany Hale</p>
+            <p class="grow-panel__role">People operations</p>
+          </div>
+        </div>
+        <div class="grow-panel__cols">
+          <div class="grow-col">
+            <p class="grow-col__label">Career goals</p>
+            <p class="grow-col__sub">Motivations</p>
+            <p class="grow-col__item">Find a mentor</p>
+          </div>
+          <div class="grow-col">
+            <p class="grow-col__label">Career goals</p>
+            <p class="grow-col__sub">Strengths</p>
+            <p class="grow-col__item">Learn about different leadership styles</p>
+            <p class="grow-col__item">Attend a leadership conference</p>
+            <p class="grow-col__item">Get involved in the hiring process</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Turnover card -->
+    <article class="card card--turnover" data-reveal>
+      <h3 class="card__title">Reduced<br>turnover 27%</h3>
+      <div class="donut-wrap">
+        <svg viewBox="0 0 160 160" class="donut" role="img" aria-label="Donut chart showing a 27 percent reduction in turnover">
+          <circle class="donut__track" cx="80" cy="80" r="66" />
+          <circle class="donut__value" id="donutValue" cx="80" cy="80" r="66" />
+          <text x="80" y="88" class="donut__label" text-anchor="middle">27%</text>
+        </svg>
+        <p class="donut-caption"><span class="dot"></span>Turnover</p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
